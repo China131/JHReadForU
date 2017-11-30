@@ -1,0 +1,6 @@
+framework module Pods_JHReadForU {
+  umbrella header "Pods-JHReadForU-umbrella.h"
+
+  export *
+  module * { export * }
+}

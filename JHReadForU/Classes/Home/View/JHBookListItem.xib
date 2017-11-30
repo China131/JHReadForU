@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookList" id="gTV-IL-0wX" customClass="JHBookListItem" customModule="JHReadForU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="221"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PIZ-Or-QyO"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvM-9n-GC8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="HaL-Cg-oXP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nvM-9n-GC8" secondAttribute="trailing" id="9yt-12-alT"/>
+                <constraint firstAttribute="trailing" secondItem="PIZ-Or-QyO" secondAttribute="trailing" id="Cnc-w4-aKq"/>
+                <constraint firstItem="PIZ-Or-QyO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DhQ-y9-99K"/>
+                <constraint firstItem="nvM-9n-GC8" firstAttribute="top" secondItem="PIZ-Or-QyO" secondAttribute="bottom" constant="5" id="Sxc-6j-EMV"/>
+                <constraint firstAttribute="bottom" secondItem="nvM-9n-GC8" secondAttribute="bottom" id="eVW-yi-r5D"/>
+                <constraint firstItem="nvM-9n-GC8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i2D-PM-Kev"/>
+                <constraint firstItem="nvM-9n-GC8" firstAttribute="top" secondItem="PIZ-Or-QyO" secondAttribute="bottom" constant="5" id="tTG-yX-bu3"/>
+                <constraint firstItem="PIZ-Or-QyO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uwh-A4-Gyb"/>
+            </constraints>
+            <size key="customSize" width="158" height="221"/>
+            <connections>
+                <outlet property="imageViews" destination="PIZ-Or-QyO" id="4f5-mL-JTe"/>
+                <outlet property="nameLabel" destination="nvM-9n-GC8" id="tWg-fS-2LI"/>
+            </connections>
+            <point key="canvasLocation" x="-167" y="-56"/>
+        </collectionViewCell>
+    </objects>
+</document>
